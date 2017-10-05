@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/phone"
+        android:layout_alignBottom="@+id/tvPhoneNo"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonClick"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:textStyle="bold"
+        android:textColor="#A9A9A9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/image"
+        android:layout_weight="3.21"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvPhoneNo"
+        android:textStyle="bold"
+        android:textColor="#A9A9A9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignStart="@+id/tvName"
+        android:layout_marginBottom="12dp"
+        android:text="Phone No" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="54dp"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/contacticon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
